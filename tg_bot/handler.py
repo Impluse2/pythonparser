@@ -2,7 +2,6 @@ from aiogram import types
 from parser.parser import main
 from tg_bot.loader import dp, bot
 from aiogram.filters import Command
-from aiogram.types import BotCommand, CallbackQuery
 
 @dp.message(Command(commands='start'))
 async def process_start_command(message: types.Message):
